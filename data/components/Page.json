@@ -1,0 +1,7 @@
+{
+  "name": "Page",
+  "description": "Applies the Spectrum background color",
+  "style": {
+    "background-color": "$colors.background-color-default"
+  }
+}

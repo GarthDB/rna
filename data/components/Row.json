@@ -1,0 +1,8 @@
+{
+  "name": "Row",
+  "description": "Arranges children horizontally",
+  "extends": ["Layout"],
+  "style": {
+    "flex-direction": "row"
+  }
+}

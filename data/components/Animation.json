@@ -1,0 +1,23 @@
+{
+  "name": "Animation",
+  "attributes": {
+    "fade": {
+      "inherit": false,
+      "style": {
+        "transition": "opacity 1s"
+      },
+      "values": {
+        "in": {
+          "style": {
+            "opacity": "1"
+          }
+        },
+        "out": {
+          "style": {
+            "opacity": "0"
+          }
+        }
+      }
+    }
+  }
+}

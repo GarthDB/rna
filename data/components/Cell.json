@@ -1,0 +1,32 @@
+{
+  "name": "Cell",
+  "configuration": {
+    "flex": "1"
+  },
+  "attributes": {
+    "align": {
+      "inherit": false,
+      "values": {
+        "center": {
+          "style": {
+            "align-self": "center",
+            "justify-self": "center"
+          }
+        }
+      }
+    },
+    "inflexible": {
+      "inherit": false,
+      "style": {
+        "flex-shrink": "0",
+        "flex-grow": "0"
+      }
+    },
+    "flex": {
+      "inherit": false,
+      "style": {
+        "flex": "$attributes.flex"
+      }
+    }
+  }
+}

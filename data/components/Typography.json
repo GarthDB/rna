@@ -1,0 +1,44 @@
+{
+  "name": "Typography",
+  "style": {
+    "font-family": "$global-font.family-base",
+    "-webkit-font-smoothing": "antialiased"
+  },
+  "attributes": {
+    "bold": {
+      "inherit": false,
+      "style": {
+        "font-weight": "$global-font.weight-bold"
+      }
+    },
+    "small": {
+      "inherit": false,
+      "description": "Used for interactive elements",
+      "style": {
+        "font-size": "$dimensions.font-size-100"
+      }
+    },
+    "medium": {
+      "inherit": false,
+      "style": {
+        "font-size": "$dimensions.font-size-150"
+      }
+    },
+    "large": {
+      "inherit": false,
+      "style": {
+        "font-size": "$dimensions.font-size-300"
+      }
+    },
+    "heading1": {
+      "inherit": false,
+      "description": "The highest order heading",
+      "style": {
+        "color": "$colors.gray-900",
+        "font-size": "$dimensions.heading1-text-size",
+        "margin-top": "$dimensions.heading1-margin-top",
+        "margin-bottom": "$dimensions.size-115"
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "name": "Toast",
+  "extends": ["Row[inline]", "Animation[fade=out]"],
+  "style": {
+    "padding": "$dimensions.size-100 $dimensions.size-100 $dimensions.size-100 $dimensions.size-200",
+    "border-radius": "$dimensions.border-radius-regular",
+
+    "background-color": "$global-colors.gray-700",
+    "color": "$global-colors.gray-700"
+  },
+  "attributes": {
+    "info": {
+      "style": {
+        "background-color": "$colors.blue-600",
+        "color": "$colors.blue-600"
+      }
+    },
+    "negative": {
+      "style": {
+        "background-color": "$colors.red-600",
+        "color": "$colors.red-600"
+      }
+    },
+    "positive": {
+      "style": {
+        "background-color": "$colors.green-600",
+        "color": "$colors.green-600"
+      }
+    },
+    "info,negative,positive": {
+      "children": [
+        {
+          "description": "Only show icon for variants that need it",
+          "name": "icon",
+          "style": {
+            "display": "initial"
+          }
+        }
+      ]
+    }
+  },
+  "states": {
+    "open": {
+      "extends": ["Animation[fade=in]"]
+    }
+  },
+  "children": [
+    {
+      "name": "icon",
+      "ref": "Icon[medium]",
+      "extends": ["Cell[inflexible]"],
+      "style": {
+        "margin": "$dimensions.size-85 $dimensions.size-150 $dimensions.size-85 0",
+        "color": "$global-colors.white",
+        "display": "none"
+      }
+    },
+    {
+      "name": "body",
+      "extends": ["Cell[flex=1,align=center]"],
+      "children": [
+        {
+          "name": "content",
+          "type": "container",
+          "extends": ["Typography[small,bold]"],
+          "style": {
+            "color": "$global-colors.white",
+            "padding": "$dimensions.size-65 $dimensions.size-200 $dimensions.size-65 0",
+            "text-align": "left"
+          }
+        },
+        {
+          "name": "buttonContainer",
+          "style": {
+            "border-left-width": "$dimensions.border-size-thin",
+            "border-left-color": "rgba(255, 255, 255, 0.2)",
+            "border-left-style": "solid",
+            "padding-left": "$dimensions.size-100"
+          },
+          "children": [
+            {
+              "name": "button",
+              "ref": "Button",
+              "style": {
+                "float": "right",
+                "margin-right": "$dimensions.size-130"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

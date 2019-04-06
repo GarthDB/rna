@@ -1,0 +1,152 @@
+{
+  "name": "Button",
+  "description": "A standard button, used for primary actions",
+  "extends": ["PillButton"],
+  "attributes": {
+    "primary": {
+      "style": {
+        "background-color": "$colors.background-color-transparent",
+        "border-color": "$colors.gray-800"
+      },
+      "children": [
+        {
+          "name": "icon",
+          "style": {
+            "color": "$colors.gray-800"
+          }
+        },
+        {
+          "name": "label",
+          "style": {
+            "color": "$colors.gray-800"
+          }
+        }
+      ],
+      "states": {
+        "hover": {
+          "style": {
+            "background-color": "$colors.gray-800",
+            "border-color": "$this.background-color"
+          }
+        },
+        "down": {
+          "style": {
+            "background-color": "$colors.gray-900",
+            "border-color": "$this.background-color"
+          }
+        }
+      }
+    },
+    "secondary": {
+      "style": {
+        "background-color": "$colors.background-color-transparent",
+        "border-color": "$colors.gray-700"
+      },
+      "children": [
+        {
+          "name": "icon",
+          "style": {
+            "color": "$colors.gray-700"
+          }
+        },
+        {
+          "name": "label",
+          "style": {
+            "color": "$colors.gray-700"
+          }
+        }
+      ],
+      "states": {
+        "hover": {
+          "style": {
+            "background-color": "$colors.gray-700",
+            "border-color": "$this.background-color"
+          }
+        },
+        "down": {
+          "style": {
+            "background-color": "$colors.gray-800",
+            "border-color": "$this.background-color"
+          }
+        }
+      }
+    },
+    "warning": {
+      "style": {
+        "background-color": "$colors.background-color-transparent",
+        "border-color": "$colors.red-600"
+      },
+      "children": [
+        {
+          "name": "icon",
+          "style": {
+            "color": "$colors.red-600"
+          }
+        },
+        {
+          "name": "label",
+          "style": {
+            "color": "$colors.red-600"
+          }
+        }
+      ],
+      "states": {
+        "hover": {
+          "style": {
+            "background-color": "$colors.red-600",
+            "border-color": "$this.background-color"
+          }
+        },
+        "down": {
+          "style": {
+            "background-color": "$colors.red-700",
+            "border-color": "$this.background-color"
+          }
+        }
+      }
+    },
+    "cta": {
+      "style": {
+        "background-color": "$colors.blue-500",
+        "border-color": "$colors.blue-500"
+      },
+      "children": [
+        {
+          "name": "icon",
+          "style": {
+            "color": "$colors.gray-50"
+          }
+        },
+        {
+          "name": "label",
+          "style": {
+            "color": "$colors.gray-50"
+          }
+        }
+      ],
+      "states": {
+        "hover": {
+          "style": {
+            "background-color": "$colors.blue-600",
+            "border-color": "$this.background-color"
+          }
+        },
+        "down": {
+          "style": {
+            "background-color": "$colors.blue-600",
+            "border-color": "$this.background-color"
+          }
+        }
+      }
+    }
+  },
+  "children": [
+    {
+      "name": "icon",
+      "ref": "Icon[small]"
+    },
+    {
+      "name": "label"
+    }
+  ]
+}

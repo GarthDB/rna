@@ -1,0 +1,8 @@
+{
+  "name": "Column",
+  "description": "Arranges children vertically",
+  "extends": ["Layout"],
+  "style": {
+    "flex-direction": "column"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Icon",
+  "style": {
+    "color": "inherit",
+    "fill": "currentColor",
+
+    "pointer-events": "none"
+  },
+  "vars": {
+    "size-s": "22px",
+    "size-m": "24px"
+  },
+  "attributes": {
+    "small": {
+      "style": {
+        "width": "$component.vars.size-s",
+        "height": "$this.width"
+      }
+    },
+    "medium": {
+      "style": {
+        "width": "$component.vars.size-m",
+        "height": "$this.width"
+      }
+    }
+  }
+}

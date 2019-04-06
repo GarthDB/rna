@@ -1,0 +1,35 @@
+{
+  "name": "UIIcon",
+  "attributes": {
+    "ChevronDownMedium": {
+      "style": {
+        "width": "10px",
+        "height": "6px"
+      }
+    },
+    "CrossMedium": {
+      "style": {
+        "width": "8px",
+        "height": "8px"
+      }
+    },
+    "InfoMedium": {
+      "style": {
+        "width": "18px",
+        "height": "18px"
+      }
+    },
+    "SuccessMedium": {
+      "style": {
+        "width": "18px",
+        "height": "18px"
+      }
+    },
+    "AlertMedium": {
+      "style": {
+        "width": "18px",
+        "height": "18px"
+      }
+    }
+  }
+}

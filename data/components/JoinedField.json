@@ -1,0 +1,31 @@
+{
+  "name": "JoinedField",
+  "description": "Join two field components together (such as a Textfield and a button)",
+  "attributes": {
+    "left": {
+      "inherit": false,
+      "style": {
+        "border-top-right-radius": "0",
+        "border-bottom-right-radius": "0",
+        "border-right-width": "0"
+      }
+    },
+    "middle": {
+      "inherit": false,
+      "style": {
+        "border-top-right-radius": "0",
+        "border-bottom-right-radius": "0",
+        "border-top-left-radius": "0",
+        "border-bottom-left-radius": "0",
+        "border-right-width": "0"
+      }
+    },
+    "right": {
+      "inherit": false,
+      "style": {
+        "border-top-left-radius": "0",
+        "border-bottom-left-radius": "0"
+      }
+    }
+  }
+}

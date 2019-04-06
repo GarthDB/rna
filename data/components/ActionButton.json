@@ -1,0 +1,112 @@
+{
+  "name": "ActionButton",
+  "extends": [
+    "Row[inline,align=center,verticalAlign=center]",
+    "Bordered[thin,midtone]"
+  ],
+  "style": {
+    "background-color": "$colors.gray-75",
+    "height": "$dimensions.size-400",
+    "padding": "0 $dimensions.size-75",
+    "min-width": "$dimensions.size-400",
+
+    "outline": "none"
+  },
+  "attributes": {
+    "quiet": {
+      "style": {
+        "border-radius": "0",
+        "border-width": "0",
+        "background-color": "transparent"
+      },
+      "states": {
+        "hover,down,active,focus": {
+          "style": {
+            "background-color": "transparent"
+          }
+        }
+      },
+      "children": [
+        {
+          "name": "icon",
+          "style": {
+            "color": "$colors.gray-800"
+          }
+        }
+      ]
+    },
+    "round": {
+      "style": {
+        "color": "$global-colors.white",
+        "border-color": "transparent",
+        "border-radius": "100%",
+        "background-color": "transparent",
+        "border-width": "0"
+      },
+      "states": {
+        "focus": {
+          "style": {
+            "box-shadow": "none"
+          }
+        },
+        "hover,down,focus": {
+          "style": {
+            "color": "inherit",
+            "border-color": "$global-colors.gray-50",
+            "background-color": "$global-colors.gray-50"
+          }
+        }
+      }
+    }
+  },
+  "states": {
+    "hover": {
+      "style": {
+        "background-color": "$colors.gray-50"
+      }
+    },
+    "down": {
+      "style": {
+        "background-color": "$colors.gray-200"
+      }
+    },
+    "focus": {
+      "style": {
+        "background-color": "$colors.gray-50"
+      }
+    },
+    "hover,down,focus": {
+      "children": [
+        {
+          "name": "label",
+          "style": {
+            "color": "$colors.gray-900"
+          }
+        }
+      ]
+    },
+    "disabled": {
+      "style": {
+        "background-color": "$colors.gray-200"
+      }
+    }
+  },
+  "children": [
+    {
+      "name": "icon",
+      "ref": "Icon[small]",
+      "style": {
+        "color": "$colors.gray-800"
+      }
+    },
+    {
+      "name": "label",
+      "type": "container",
+      "extends": ["Typography[small]"],
+      "style": {
+        "color": "$colors.gray-800",
+        "padding": "0 $dimensions.size-65"
+      }
+    }
+  ]
+}

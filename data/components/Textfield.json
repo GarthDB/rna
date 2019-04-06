@@ -1,0 +1,89 @@
+{
+  "name": "Textfield",
+  "extends": ["Typography[small]", "Bordered[thin,midtone]"],
+  "style": {
+    "height": "$dimensions.size-400",
+    "min-width": "$dimensions.size-600",
+
+    "padding": "$dimensions.size-100 $dimensions.size-100 $dimensions.size-100 $dimensions.size-200",
+
+    "background-color": "$colors.gray-50",
+
+    "outline": "none",
+
+    "box-sizing": "border-box"
+  },
+  "attributes": {
+    "quiet": {
+      "style": {
+        "border-radius": "0",
+        "background-color": "transparent",
+        "border-top-width": "0",
+        "border-left-width": "0",
+        "border-right-width": "0",
+        "padding": "0"
+      },
+      "states": {
+        "hover,down,active,focus": {
+          "style": {
+            "background-color": "transparent"
+          }
+        },
+        "focus": {
+          "style": {
+            "box-shadow": "0 1px 0 $colors.border-color-focus"
+          }
+        }
+      }
+    }
+  },
+  "states": {
+    "hover": {
+      "style": {
+        "background-color": "$colors.gray-50"
+      }
+    },
+    "down": {
+      "style": {
+        "background-color": "$colors.gray-50"
+      }
+    },
+    "mouse-focus": {
+      "style": {
+        "border-color": "$colors.border-color-focus"
+      }
+    },
+    "focus": {
+      "style": {
+        "background-color": "$colors.gray-50"
+      }
+    },
+    "disabled": {
+      "style": {
+        "background-color": "$colors.gray-200"
+      }
+    },
+    "error": {
+      "style": {
+        "border-color": "$colors.red-500"
+      },
+      "states": {
+        "hover": {
+          "style": {
+            "border-color": "$colors.red-600"
+          }
+        },
+        "down": {
+          "style": {
+            "border-color": "$colors.border-color-down"
+          }
+        },
+        "focus": {
+          "style": {
+            "border-color": "$colors.border-color-focus"
+          }
+        }
+      }
+    }
+  }
+}

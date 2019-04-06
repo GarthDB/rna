@@ -1,0 +1,57 @@
+{
+  "name": "Layout",
+  "description": "A flexbox-based layout",
+  "style": {
+    "display": "flex"
+  },
+  "attributes": {
+    "inline": {
+      "style": {
+        "display": "inline-flex"
+      }
+    },
+    "verticalAlign": {
+      "values": {
+        "center": {
+          "style": {
+            "align-items": "center"
+          }
+        },
+        "start": {
+          "style": {
+            "align-items": "flex-start"
+          }
+        },
+        "end": {
+          "style": {
+            "align-items": "flex-end"
+          }
+        }
+      }
+    },
+    "align": {
+      "values": {
+        "center": {
+          "style": {
+            "justify-content": "center"
+          }
+        },
+        "start": {
+          "style": {
+            "justify-content": "flex-start"
+          }
+        },
+        "end": {
+          "style": {
+            "justify-content": "flex-end"
+          }
+        }
+      }
+    },
+    "reverse": {
+      "style": {
+        "flex-direction": "reverse"
+      }
+    }
+  }
+}

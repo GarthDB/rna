@@ -1,0 +1,16 @@
+{
+  "name": "FocusRing",
+  "description": "The growing focus ring, generally applied to buttons and fields",
+  "style": {
+    "border-color": "$colors.border-color-focus",
+    "box-shadow": "0 0 0 $dimensions.size-10 $this.border-color"
+  },
+  "attributes": {
+    "thin": {
+      "inherit": false,
+      "style": {
+        "box-shadow": "none"
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "name": "ComboBox",
+  "extends": ["Row[inline]"],
+  "states": {
+    "focus-within": {
+      "children": [
+        {
+          "name": "input",
+          "ref": "Textfield",
+          "extends": ["FocusRing[thin]"]
+        },
+        {
+          "name": "button",
+          "ref": "ActionButton",
+          "extends": ["FocusRing[thin]"]
+        }
+      ]
+    }
+  },
+  "attributes": {
+    "quiet": {
+      "children": [
+        {
+          "name": "input",
+          "ref": "Textfield[quiet]"
+        },
+        {
+          "name": "button",
+          "ref": "ActionButton[quiet]",
+          "style": {
+            "border-bottom-width": "$dimensions.border-size-thin",
+            "justify-content": "flex-end",
+            "padding-right": "0"
+          }
+        }
+      ]
+    }
+  },
+  "children": [
+    {
+      "name": "input",
+      "ref": "Textfield",
+      "extends": ["JoinedField[left]"]
+    },
+    {
+      "name": "button",
+      "ref": "ActionButton",
+      "extends": ["JoinedField[right]"]
+    }
+  ]
+}

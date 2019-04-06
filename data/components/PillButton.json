@@ -1,0 +1,157 @@
+{
+  "name": "PillButton",
+  "extends": ["Row[align=center]", "Bordered[thick]"],
+  "style": {
+    "height": "$dimensions.single-line-height",
+    "padding": "0 $dimensions.size-200",
+    "min-width": "$dimensions.size-900",
+
+    "cursor": "pointer",
+    "outline": "none"
+  },
+  "attributes": {
+    "quiet": {
+      "style": {
+        "border-width": "0"
+      },
+      "states": {
+        "focus": {
+          "style": {
+            "box-shadow": "none"
+          }
+        }
+      }
+    },
+    "overBackground": {
+      "style": {
+        "background-color": "transparent",
+        "border-color": "$global-colors.gray-50",
+        "color": "inherit"
+      },
+      "states": {
+        "hover,down,focus": {
+          "style": {
+            "border-color": "$global-colors.gray-50",
+            "box-shadow": "none",
+            "background-color": "$global-colors.gray-50"
+          },
+          "children": [
+            {
+              "name": "icon",
+              "style": {
+                "color": "inherit"
+              }
+            },
+            {
+              "name": "label",
+              "style": {
+                "color": "inherit"
+              }
+            }
+          ]
+        }
+      },
+      "children": [
+        {
+          "name": "icon",
+          "style": {
+            "color": "$global-colors.white"
+          }
+        },
+        {
+          "name": "label",
+          "style": {
+            "color": "$global-colors.white"
+          }
+        }
+      ]
+    }
+  },
+  "states": {
+    "hover": {
+      "children": [
+        {
+          "name": "icon",
+          "style": {
+            "color": "$colors.gray-50"
+          }
+        },
+        {
+          "name": "label",
+          "style": {
+            "color": "$colors.gray-50"
+          }
+        }
+      ]
+    },
+    "down": {
+      "children": [
+        {
+          "name": "icon",
+          "style": {
+            "color": "$colors.gray-50"
+          }
+        },
+        {
+          "name": "label",
+          "style": {
+            "color": "$colors.gray-50"
+          }
+        }
+      ]
+    },
+    "focus": {
+      "style": {
+        "background-color": "$colors.background-color-key-focus",
+        "border-color": "$colors.background-color-key-focus"
+      },
+      "children": [
+        {
+          "name": "icon",
+          "style": {
+            "color": "$component.states.focus.children.label.style.color"
+          }
+        },
+        {
+          "name": "label",
+          "style": {
+            "color": "$global-colors.white"
+          }
+        }
+      ]
+    },
+    "disabled": {
+      "style": {
+        "background-color": "$colors.gray-200"
+      },
+      "children": [
+        {
+          "name": "icon",
+          "style": {
+            "color": "$component.states.disabled.children.label.style.color"
+          }
+        },
+        {
+          "name": "label",
+          "style": {
+            "color": "$colors.gray-500"
+          }
+        }
+      ]
+    }
+  },
+  "children": [
+    {
+      "name": "icon",
+      "ref": "Icon[small]"
+    },
+    {
+      "name": "label",
+      "type": "container",
+      "extends": ["Typography[medium,bold]"],
+      "style": {
+        "line-height": "0"
+      }
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "name": "Bordered",
+  "description": "Make a component appear interactive with the Spectrum rounded border",
+  "style": {
+    "border-style": "solid"
+  },
+  "states": {
+    "focus": {
+      "extends": ["FocusRing"]
+    },
+    "disabled": {
+      "style": {
+        "border-color": "$colors.gray-500"
+      }
+    }
+  },
+  "attributes": {
+    "midtone": {
+      "description": "The standard border color",
+      "style": {
+        "border-color": "$colors.gray-300"
+      },
+      "states": {
+        "hover": {
+          "style": {
+            "border-color": "$colors.gray-400"
+          }
+        },
+        "down": {
+          "style": {
+            "border-color": "$colors.gray-400"
+          }
+        },
+        "disabled": {
+          "style": {
+            "border-color": "$colors.border-color-transparent"
+          }
+        }
+      }
+    },
+
+    "thin": {
+      "description": "A thin border, used for buttons and fields",
+      "style": {
+        "border-width": "$dimensions.border-size-thin",
+        "border-radius": "$dimensions.border-radius-regular"
+      }
+    },
+    "thick": {
+      "description": "A thin border, used for Pill buttons",
+      "style": {
+        "border-width": "$dimensions.border-size-thick",
+        "border-radius": "$dimensions.border-radius-large"
+      }
+    }
+  }
+}
